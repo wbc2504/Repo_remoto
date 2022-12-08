@@ -42,6 +42,12 @@ public class Principal {
                             arbol.Inicializar();
                             JOptionPane.showMessageDialog(null,"Los numeros impares del arbol son:  "+arbol.ExtraerImpares(arbol.getRaiz()));
                         }break;
+
+		 case 5:if(arbol.Estavacio()==false)
+                        {
+                            arbol.Inicializar();
+                            JOptionPane.showMessageDialog(null,"La sumatoria de todos los nodos del arbol es:  "+arbol.Sumatoria(arbol.getRaiz()));
+                        }break;
                
             }
         }while(opcion<6);

@@ -44,6 +44,17 @@ public class ArbolBin
       aux=new nodo(null,info,null); 
     
  }//fin de ingresar hijo
+ public int Sumatoria(nodo q)
+    {
+        if(q!=null)
+          {
+
+            Sumatoria(q.getAnt()) ;
+            cont=cont+(q.getDato());
+            Sumatoria(q.getSig()) ;
+          }
+          return cont;
+    }
  
 public void InsertarNodos(nodo q)
 {
